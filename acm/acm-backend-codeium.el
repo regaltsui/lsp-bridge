@@ -51,14 +51,6 @@
   :group 'acm-backend-codeium)
 
 
-(defgroup acm-backend-lsp-ai nil
-  "ACM LSP AI support."
-  :group 'acm)
-
-(defcustom acm-backend-lsp-ai-api-key-path (expand-file-name (concat user-emacs-directory (file-name-as-directory "lsp-bridge") ".lsp_ai_key"))
-  "The path to store LSP-AI API Key."
-  :type 'string
-  :group 'acm-backend-codeium)
 
 (defvar-local acm-backend-codeium-items nil)
 
