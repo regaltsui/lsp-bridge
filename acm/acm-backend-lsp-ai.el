@@ -26,7 +26,7 @@
 (defcustom acm-backend-lsp-ai-api-key-path (expand-file-name (concat user-emacs-directory (file-name-as-directory "lsp-bridge") ".lsp_ai_key"))
   "The path to store LSP-AI API Key."
   :type 'string
-  :group 'acm-backend-codeium)
+  :group 'acm-backend-lsp-ai)
 
 (defvar-local acm-backend-lsp-ai-items nil)
 
@@ -36,7 +36,7 @@
    acm-backend-lsp-ai-items))
 
 (defun acm-backend-lsp-ai-candidate-expand (candidate-info bound-start &optional preview)
-  ;; We need replace whole area with codeium label.
+  ;; We need replace whole area with LSP-AI label.
   (let ((end-position (line-end-position)))
     (forward-line (- (plist-get candidate-info :line) (count-lines (point-min) (line-beginning-position))))
     (if preview
