@@ -89,7 +89,7 @@
         "model": "large_model",
         "parameters": {
           "max_context": 8192,
-          "max_tokens": 8192,
+          "max_tokens": 32,
           "options": {
             "num_predict": 32
           },
